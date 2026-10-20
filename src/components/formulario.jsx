@@ -150,7 +150,7 @@ function Crud(props) {
           <div key={item.idOrdem}
           className={(editando === item.idOrdem ? "item-editando" : "item-reserva") + (item.fgConcluida ? " item-concluida" : "")}>
             <p>
-            Cliente: {item.dsCliente} | Serviço: {item.dsServico} | Valor: {item.nuValor} | {item.fgConcluida && <p>Concluída</p>}  Concluída: {String(item.fgConcluida)}  <button onClick={() => concluir(item.idOrdem)}>{item.fgConcluida ? "Reabrir" : "Concluir"}</button>
+            Cliente: {item.dsCliente} | Serviço: {item.dsServico} | Valor: {item.nuValor} | Concluída: {String(item.fgConcluida)}  <button onClick={() => concluir(item.idOrdem)}>{item.fgConcluida ? "Reabrir" : "Concluir"}</button>
         
               <button className="update" onClick={() => editar(item.idOrdem)}>
                 Editar
